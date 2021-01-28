@@ -81,11 +81,27 @@ echo "<hr>";
 
 $edad1 = 18;
 $edad2 = 64;
-$edad_oficial = 20;
+$edad_oficial = 66;
 
 
-if ($edad_oficial >= $edad1 && $edad_oficial <= $edad2) {    // Se tienen que cumplir las dos condiciones (&& = signifinca and(y))
+if ($edad_oficial >= $edad1 && $edad_oficial <= $edad2) {    // Se tienen que cumplir las dos condiciones (&& = signifinca and(y)) 
     echo "Esta en edad de trabajar";
 } else {
     echo "No puede trabajar";
+}
+
+
+/* Los operadores logicos
+&& (AND = Y)
+|| (OR = O)
+! (NOT = NO)
+*/
+echo "<hr>";
+
+$pais = 'Mexico';
+
+if($pais == 'Mexico' || $pais == 'España' || $pais == 'Colombia'){   // Se tiene que cumplir al menos UNA de las condiciones, sino sale el else
+        echo 'En esta pais se habla español';
+}else{
+    echo 'No se habla español';
 }
