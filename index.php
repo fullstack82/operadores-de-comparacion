@@ -20,9 +20,9 @@ if ($edad >= $mayoria_de_edad) {
 };
 
 
-// Else If anidadps
+// Else If anidados (solo es una prueba, no se debe hacer así)
 
-$dia = 4;
+/*$dia = 4;
 
 if ($dia == 1) {
     echo "Es lunes";
@@ -53,4 +53,24 @@ if ($dia == 1) {
             
         }
     }
-}
+}*/
+
+// La manera correcta de hacerlo, usando elseif;
+$dia = 5;
+if($dia == 1){
+    echo "Lunes";
+}elseif($dia == 2){
+    echo "Martes";
+}elseif($dia == 3){
+    echo "Miercoles";
+}elseif($dia == 4){
+    echo "Jueves";
+}elseif($dia == 5){
+    echo "Viernes";
+}elseif($dia == 6){
+    echo "Sabado";
+}elseif($dia == 7){
+    echo "Domingo";
+}else{
+    echo "NO existe ese dia de la semana";
+};
