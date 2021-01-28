@@ -57,20 +57,35 @@ if ($dia == 1) {
 
 // La manera correcta de hacerlo, usando elseif;
 $dia = 5;
-if($dia == 1){
+if ($dia == 1) {
     echo "Lunes";
-}elseif($dia == 2){
+} elseif ($dia == 2) {
     echo "Martes";
-}elseif($dia == 3){
+} elseif ($dia == 3) {
     echo "Miercoles";
-}elseif($dia == 4){
+} elseif ($dia == 4) {
     echo "Jueves";
-}elseif($dia == 5){
+} elseif ($dia == 5) {
     echo "Viernes";
-}elseif($dia == 6){
+} elseif ($dia == 6) {
     echo "Sabado";
-}elseif($dia == 7){
+} elseif ($dia == 7) {
     echo "Domingo";
-}else{
+} else {
     echo "NO existe ese dia de la semana";
 };
+
+echo "<hr>";
+
+// Operadores logicos
+
+$edad1 = 18;
+$edad2 = 64;
+$edad_oficial = 20;
+
+
+if ($edad_oficial >= $edad1 && $edad_oficial <= $edad2) {    // Se tienen que cumplir las dos condiciones (&& = signifinca and(y))
+    echo "Esta en edad de trabajar";
+} else {
+    echo "No puede trabajar";
+}
